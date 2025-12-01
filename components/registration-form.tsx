@@ -48,7 +48,7 @@ export function RegistrationForm() {
           transition={{ delay: 0.3 }}
           className="text-3xl mb-4 text-white"
         >
-          You're In! 🎉
+          You&apos;re In! 🎉
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
@@ -56,7 +56,7 @@ export function RegistrationForm() {
           transition={{ delay: 0.4 }}
           className="text-purple-200 text-lg mb-2"
         >
-          We've sent confirmation details to
+          We&apos;ve sent confirmation details to
         </motion.p>
         <motion.p
           initial={{ opacity: 0, y: 20 }}

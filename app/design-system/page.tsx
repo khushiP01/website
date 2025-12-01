@@ -129,7 +129,7 @@ export default function DesignSystemPage() {
             transition={{ delay: 0.3, duration: 0.6 }}
             className="text-4xl md:text-6xl lg:text-7xl mb-6 text-white leading-tight px-4"
           >
-            Forget "webinars"
+            Forget &quot;webinars&quot;
             <br />
             <span className="bg-gradient-to-r from-purple-200 to-purple-400 bg-clip-text text-transparent">
               Build Admissions
