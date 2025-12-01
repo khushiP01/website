@@ -30,8 +30,12 @@ export default function DesignSystemPage() {
       vy: number;
       size: number;
       opacity: number;
+      canvasWidth: number;
+      canvasHeight: number;
 
       constructor(canvasWidth: number, canvasHeight: number) {
+        this.canvasWidth = canvasWidth;
+        this.canvasHeight = canvasHeight;
         this.x = Math.random() * canvasWidth;
         this.y = Math.random() * canvasHeight;
         this.vx = (Math.random() - 0.5) * 0.5;
@@ -44,8 +48,8 @@ export default function DesignSystemPage() {
         this.x += this.vx;
         this.y += this.vy;
 
-        if (this.x < 0 || this.x > canvas.width) this.vx *= -1;
-        if (this.y < 0 || this.y > canvas.height) this.vy *= -1;
+        if (this.x < 0 || this.x > this.canvasWidth) this.vx *= -1;
+        if (this.y < 0 || this.y > this.canvasHeight) this.vy *= -1;
       }
 
       draw() {
@@ -69,6 +73,9 @@ export default function DesignSystemPage() {
       ctx.clearRect(0, 0, canvas.width, canvas.height);
 
       particles.forEach((particle) => {
+        // Update canvas dimensions in case of resize
+        particle.canvasWidth = canvas.width;
+        particle.canvasHeight = canvas.height;
         particle.update();
         particle.draw();
       });
