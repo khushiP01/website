@@ -40,3 +40,6 @@ next-env.d.ts
 
 # Temporary repos
 temp-repo/
+
+# Design System source (not part of Next.js build)
+"Design System SaaS Landing Page/"
