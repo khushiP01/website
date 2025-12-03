@@ -11,6 +11,14 @@ export default function Home() {
         >
           Go to Design System Landing Page
         </Link>
+        <div className="mt-4">
+          <Link
+            href="/privacy"
+            className="text-gray-600 hover:text-gray-800 underline text-sm"
+          >
+            Privacy Policy
+          </Link>
+        </div>
       </div>
     </main>
   );

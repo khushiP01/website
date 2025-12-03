@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { RegistrationForm } from "@/components/registration-form";
 
 export default function DesignSystemPage() {
@@ -205,9 +206,15 @@ export default function DesignSystemPage() {
           transition={{ delay: 1.2, duration: 0.6 }}
           className="mt-12 text-center"
         >
-          <p className="text-purple-400/60 text-xs">
+          <p className="text-purple-400/60 text-xs mb-2">
             Limited seats available • Secure your spot now
           </p>
+          <Link
+            href="/privacy"
+            className="text-purple-400/60 text-xs hover:text-purple-300/80 underline transition-colors"
+          >
+            Privacy Policy
+          </Link>
         </motion.div>
       </div>
 
